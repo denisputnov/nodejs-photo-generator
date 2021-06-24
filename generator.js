@@ -25,12 +25,13 @@ module.exports = async function generate(header, text) {
             height: 2048px;
           }
           h1 {
-            font-size: 200px;
+            font-size: 180px;
             margin-bottom: 80px;
+            font-weight: 600;
           }
   
           p {
-            font-size: 200px;
+            font-size: 180px;
           }
   
           img {
