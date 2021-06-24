@@ -18,12 +18,12 @@ bot.on('message', async (message) => {
     return bot.sendPhoto(message.chat.id, './out.png')
   }
 
-  if (message.text.length > 1 && message.text.length <= 36) {
+  if (message.text.length > 1 && message.text.length <= 40) {
     header = message.text
     return bot.sendMessage(message.chat.id, (header.length || text.length) ? `${header}\n\n${text}` : 'Пусто')
   }
 
-  if (message.text.length > 36 && message.text.length <= 115) {
+  if (message.text.length > 40) {
     text = message.text
     return bot.sendMessage(message.chat.id, (header.length || text.length) ? `${header}\n\n${text}` : 'Пусто')
   }
